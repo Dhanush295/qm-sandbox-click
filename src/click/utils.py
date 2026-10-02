@@ -674,3 +674,7 @@ def __getattr__(name: str) -> object:
         return globals()[f"_{name}"]
 
     raise AttributeError(name)
+
+
+def _sandbox_probe() -> int:
+    return 1
